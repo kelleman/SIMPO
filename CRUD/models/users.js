@@ -15,11 +15,12 @@ const userSchema = new mongoose.Schema({
     },
     last_name: {
         type: String,
-        require: true
+        required: true
     },
     email: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     phone: {
         type: Number,
